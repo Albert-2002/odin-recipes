@@ -33,3 +33,28 @@ h1 {
   height: 100px;
   width: 300px;
 }
+
+.test-box {
+  padding: 32px 32px 32px 32px;
+  margin: 0px;
+  background-color: lightgreen;
+  border: 1px solid black;
+  height: 100px;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+/* flex-shrink only ends up being applied if the size of all flex items is larger than their parent container. */
+
+.test-box .tb {
+  background-color: lightcoral;
+  height: 34px;
+  width: 30px;
+  border: 1px solid black;
+  flex: 1;
+}
+
+.test-box-2.tb {
+  flex: 2;
+}
